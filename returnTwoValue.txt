@@ -1,0 +1,17 @@
+
+package pkgreturn.two.value;
+
+public class ReturnTwoValue {
+
+    public static Number1Number2 getNumber1AndNumber2(){ 
+        double a=100;
+        double b=200;
+        return new Number1Number2 (100,200);
+    }
+    public static void main(String[] args) {
+        Number1Number2 sp=getNumber1AndNumber2();
+        double n1=sp.getNumber1();
+        double n2=sp.getNumber2();
+        System.out.print(n1+n2);
+    }
+}
